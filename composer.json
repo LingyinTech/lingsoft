@@ -1,0 +1,20 @@
+{
+  "name": "lingsoft/lingyin",
+  "description": "一个不成熟的轮子",
+  "keywords": [
+  ],
+  "homepage": "https://www.lingyin99.com",
+  "authors": [
+    {
+      "name": "actors315",
+      "email": "xie.hj@lingyin99.cn"
+    }
+  ],
+  "require": {
+  },
+  "autoload": {
+    "psr-4": {
+      "lingyin\\": ""
+    }
+  }
+}
