@@ -6,7 +6,7 @@
  * Time: 21:58
  */
 
-include_once dirname(__FILE__).'/../Profile.php';
+include_once dirname(__FILE__) . '/../Profile.php';
 function bar() {
     return 1;
 }

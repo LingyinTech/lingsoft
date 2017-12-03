@@ -1,8 +1,6 @@
 {
-  "name": "lingsoft/lingyin",
-  "description": "一个不成熟的轮子",
-  "keywords": [
-  ],
+  "name": "lingsoft/profile",
+  "description": "基于xhprof的php性能收集类库",
   "homepage": "https://www.lingyin99.com",
   "authors": [
     {
@@ -14,7 +12,7 @@
   },
   "autoload": {
     "psr-4": {
-      "lingyin\\": ""
+      "lingyin\\profile\\": "src/"
     }
   }
 }
