@@ -6,7 +6,7 @@
  * Time: 22:19
  */
 
-namespace lingyin\profile\sync\channel;
+namespace lingyin\profile\sync;
 
 
 class Redis implements SyncInterface

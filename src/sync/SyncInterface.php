@@ -6,7 +6,7 @@
  * Time: 20:50
  */
 
-namespace lingyin\profile\sync\channel;
+namespace lingyin\profile\sync;
 
 
 interface SyncInterface

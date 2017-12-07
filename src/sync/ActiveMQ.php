@@ -6,7 +6,7 @@
  * Time: 20:46
  */
 
-namespace lingyin\profile\sync\channel;
+namespace lingyin\profile\sync;
 
 
 class ActiveMQ implements SyncInterface

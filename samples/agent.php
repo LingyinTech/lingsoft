@@ -1,8 +1,8 @@
 <?php
 
-require __DIR__ . '/../LogSync.php';
-require __DIR__ . '/../channel/SyncInterface.php';
-require __DIR__ . '/../channel/Redis.php';
+require __DIR__ . '/../src/autoload.php';
 $cfg = [
+    'adapter' => 'Http',
+    'debug' => true,
 ];
-(new \lingyin\profile\sync\LogSync())->handler($cfg)->run();
+(new \lingyin\profile\LogSync())->handler($cfg)->run();

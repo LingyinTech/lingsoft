@@ -6,7 +6,7 @@
  * Time: 21:09
  */
 
-namespace lingyin\profile\sync\channel;
+namespace lingyin\profile\sync;
 
 
 class Http implements SyncInterface

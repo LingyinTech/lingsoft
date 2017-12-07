@@ -7,14 +7,14 @@
  */
 
 namespace lingyin\profile;
-use lingyin\profile\sync\channel\Http;
+
+use lingyin\profile\sync\Http;
 
 /**
  * xhprof性能分析
  *
  * 需安装相应扩展，支持Xhprof和Uprofiler
  */
-
 class Profile
 {
 
@@ -39,7 +39,7 @@ class Profile
      *
      * @var int
      */
-    const SAMPLING_RATE = 100;
+    const SAMPLING_RATE = 1000;
 
     /**
      * 站点标识
@@ -97,7 +97,6 @@ class Profile
         if (!self::$_started) {
             return;
         }
-
         $data = [
             'request_id' => uniqid() . '-' . rand(1000, 9999),
             'time' => time(),
@@ -206,7 +205,7 @@ class Profile
      */
     private static function saveByDev(array $data)
     {
-        if (!PHP_PROFILE_DEV) {
+        if (!defined('PHP_PROFILE_DEV') || !PHP_PROFILE_DEV) {
             return;
         }
 

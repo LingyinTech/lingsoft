@@ -49,3 +49,5 @@ Temporary Items
 vendor/
 .svn/
 composer.lock
+samples/nohup.log
+samples/profile.dat

@@ -6,7 +6,7 @@
  * Time: 21:58
  */
 
-include_once dirname(__FILE__) . '/../Profile.php';
+require __DIR__ . '/../src/autoload.php';
 function bar() {
     return 1;
 }
@@ -17,6 +17,8 @@ function foo($x) {
     }
     return strlen("hello: {$x}");
 }
+$_GET['lingyin-profile'] = 1;
+define('PHP_PROFILE_OUTPUT','./');
 \lingyin\profile\Profile::start(['adapter'=>'Xhprof']);
 foo(10);
-print_r(\lingyin\profile\Profile::stop());
+\lingyin\profile\Profile::stop();
