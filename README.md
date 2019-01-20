@@ -1,6 +1,8 @@
 # 简介
 基于xhprof的性能收集组件
 
+[![Build Status](https://travis-ci.org/LingyinTech/profile.svg?branch=master)](https://travis-ci.org/LingyinTech/profile)  
+
 # 安装  
 
 ## 准备  

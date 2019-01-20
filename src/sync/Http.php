@@ -13,7 +13,7 @@ class Http implements SyncInterface
 {
     private $instance = null;
 
-    private $url = 'http://profile.lingyin99.com/api/import';
+    private $url = 'https://profile.lingyin99.com/api/import';
 
     public function __construct($config = [])
     {
@@ -48,6 +48,8 @@ class Http implements SyncInterface
 
         try {
             curl_setopt_array($this->instance, [
+                CURLOPT_SSL_VERIFYPEER => 0,
+                CURLOPT_SSL_VERIFYHOST => 0,
                 CURLOPT_RETURNTRANSFER => 1,
                 CURLOPT_POST => 1,
                 CURLOPT_POSTFIELDS => ['data' => gzcompress(json_encode($message))],
