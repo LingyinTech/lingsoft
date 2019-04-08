@@ -14,4 +14,7 @@ install:
 script:
   - ./vendor/bin/phpunit --coverage-clover=coverage.clover
 
+after_success:
+ - git push https://actors315:$GITEE_COM_TOKEN@gitee.com/actors315/ling-profile.git --all
+
 
